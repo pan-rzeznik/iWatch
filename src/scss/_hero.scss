@@ -1,0 +1,82 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    max-width: 100%;
+    padding: 0 3.5rem;
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+
+   
+}
+
+.hero-text-box {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    margin: 0 0 6rem 2rem;
+    transform: translateY(5rem);
+
+    h1 {
+        font-weight: 800;
+        text-align: left;
+        font-size: 6rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-weight: 300;
+        text-align: left;
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-bottom: 3.5rem;
+    }
+
+    form {
+
+      .mail {
+          width: 60%;
+          height: 4.5rem;
+          border: none;
+          border-radius: 5px 0 0 5px;
+          padding: .5rem 2rem;
+          margin-right: 1rem;
+          font-size: 1.3rem;
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.144);
+
+          &:active,
+          &:focus {
+              outline: none;
+          }
+      }
+
+      .btn-subscribe {
+        width: 12rem;
+        height: 5.5rem;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        padding: .5rem 2rem;
+        margin-right: 2rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.144);
+        background-color: var(--blue);
+        color: white;
+      }
+    }
+}
+
+.hero-img {
+    transform: translateY(5rem);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    
+   img {
+       width: 100%;
+   }
+
+}
+

@@ -1,0 +1,19 @@
+
+
+:root {
+    // Colors
+    --black: #372F33;
+    --grey: #707070;
+    --light-grey: #898989;
+    --dirty-white: #F8F8F8;
+    --blue: #4AECE7;
+
+    //Units
+    --page-container: 120rem;
+}
+
+%grid-system {
+    display: grid;
+    grid-template-columns: 1fr repeat(10, minmax(8rem,12rem)) 1fr;
+}
+

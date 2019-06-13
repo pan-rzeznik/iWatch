@@ -1,0 +1,9 @@
+.moreFeatures {
+    background-color: var(--dirty-white);
+    width: 100%;
+    @extend %grid-system;
+
+    &__content {
+        grid-column: 2/12;
+    }
+}

@@ -1,0 +1,58 @@
+.charging {
+    padding: 8rem 0;
+    background-color: var(--dirty-white);
+    @extend %grid-system;
+
+    &__content {
+        grid-column: 2/12;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+
+        .charging__text-box {
+            grid-column: 1/2;
+            padding: 0 2rem;
+
+            header {
+
+                h1 {
+                    font-size: 3.3rem;
+                    font-weight: 600;
+                    text-align: left;
+                }
+
+                p {
+                    font-weight: 300;
+                    text-align: left;
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    padding-bottom: 3.5rem;
+                }
+            } 
+            ul {
+                list-style: disc;
+                padding: 1.5rem;
+
+                li {
+                    font-size: 1.6rem;
+                    line-height: 1.8;
+                    
+                }
+            }
+
+
+
+        }
+
+        .charging__picture-box {
+            grid-column: 2/3;
+            align-self: center;
+            margin-left: 11rem;
+
+            img {
+                width: 120%;
+            }
+        }
+    }
+}

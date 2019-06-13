@@ -1,0 +1,27 @@
+.navbar {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar-content {
+    
+    ul {
+        list-style: none;
+        display: flex;
+
+
+        li {
+            padding: 1rem;
+            margin: 0 2rem;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    } 
+}

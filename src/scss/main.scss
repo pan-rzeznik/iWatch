@@ -1,1 +1,53 @@
- 
+@import '../css/normalize.css';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif; 
+}
+
+.page-container {
+    max-width: 100%;
+    @extend %grid-system;
+
+    header {
+        grid-column: 2/12;
+    }
+    main {
+        grid-column: 1/13;
+        @extend %grid-system;
+
+        & > * {
+            grid-column: 2/12;
+        }
+
+        section.charging,
+        section.moreFeatures
+         {
+            grid-column: 1/13;
+        }
+    }
+    footer {
+        grid-column: 2/12;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap');
+
+@import './variables';
+@import './typography';
+@import './hero';
+@import './navbar';
+@import './features';
+@import './charging';
+@import './straps';
+@import './moreFeatures';
+@import './price';
+@import './newsletter';

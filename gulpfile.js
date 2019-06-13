@@ -10,6 +10,7 @@ const gulp = require('gulp'),
 const SRC = {
     directly: './src',
     sass: './src/scss/main.scss',
+    allSass: './src/scss/*.scss',
     css: './src/css',
     index: './src/index.html',
     js: './src/js/index.js'
@@ -56,7 +57,7 @@ function watch() {
         tunnel: false,
         logLevel: "debug"
     })
-    gulp.watch(SRC.sass, style)
+    gulp.watch(SRC.allSass, style)
     gulp.watch(SRC.index).on('change', browserSync.reload);
     gulp.watch(`${SRC.directly}/css/*.css`).on('change', browserSync.reload);
 }
