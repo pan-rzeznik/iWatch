@@ -1,0 +1,51 @@
+.side-menu {
+    z-index: 1000;
+    position: absolute;
+    right: 0; 
+    height: 100vh;
+    width: 30rem;
+    border-left: 2px solid rgb(214, 214, 214);
+    box-shadow: 5px 0 10px rgb(207, 207, 207);
+    background-color: var(--dirty-white);
+    transition: .5s all;
+    transform: translateX(80%);
+}
+
+.toggler {
+    margin: 5rem 2rem 2rem 2rem;
+    padding: 1rem;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    .line {
+        display: inline-block;
+        height: 3px;
+        width: 3rem;
+        background-color: var(--black);
+        border-radius: 5rem;
+    }
+}
+
+.side-nav {
+     margin-top: 12rem;
+
+     &-content {
+
+         ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+
+            li {
+                width: 80%;
+                padding: 1rem 2rem;
+                margin: 1rem 0;
+                cursor: pointer;
+                text-align: right;
+            }
+         }
+     }
+}

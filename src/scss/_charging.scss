@@ -1,5 +1,5 @@
 .charging {
-    padding: 8rem 0;
+    padding: 6rem 0;
     background-color: var(--dirty-white);
     @extend %grid-system;
 
@@ -15,6 +15,10 @@
             padding: 0 2rem;
 
             header {
+
+                span{
+                    display: block;
+                }
 
                 h1 {
                     font-size: 3.3rem;
@@ -48,11 +52,46 @@
         .charging__picture-box {
             grid-column: 2/3;
             align-self: center;
-            margin-left: 11rem;
 
             img {
-                width: 120%;
+                width: 100%;
             }
         }
     }
+}
+
+@media(max-width: 900px) {
+    .charging__content {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+        grid-template-rows: auto auto;
+        grid-auto-flow: dense;
+       
+            .charging__text-box {
+                grid-row: 2/3;
+                grid-column: 1/2;
+    
+            }
+    
+            .charging__picture-box {
+                grid-row: 1/2;
+                grid-column: 1/2
+            }
+        }
+}
+
+@media(max-width: 560px) {
+   .charging {
+    padding: 3.5rem 0;
+
+    .charging__text-box {
+        
+        header {
+             span{
+                    display: inline;
+                }
+        }
+    }
+
+  }
 }

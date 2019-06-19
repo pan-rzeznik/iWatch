@@ -1,11 +1,10 @@
 .navbar {
-    position: absolute;
-    top: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: relative;
+    z-index: 900;
 }
 
 .navbar-content {
@@ -24,4 +23,22 @@
             }
         }
     } 
+}
+
+@media(max-width: 900px) {
+    .navbar-content {
+        display: none;
+    }
+}
+
+@media(max-width: 560px) {
+    .navbar {
+        .logo {
+
+            margin-left: 0;
+            img {
+                width: 80%;
+            }
+        }
+    }
 }

@@ -14,11 +14,14 @@ body {
 .page-container {
     max-width: 100%;
     @extend %grid-system;
+    position: relative;
 
     header {
+        max-width: 100%;
         grid-column: 2/12;
     }
     main {
+        max-width: 100%;
         grid-column: 1/13;
         @extend %grid-system;
 
@@ -33,6 +36,7 @@ body {
         }
     }
     footer {
+        max-width: 100%;
         grid-column: 2/12;
     }
 }
@@ -43,6 +47,8 @@ body {
 
 @import './variables';
 @import './typography';
+@import './side-nav';
+@import './header';
 @import './hero';
 @import './navbar';
 @import './features';
@@ -51,3 +57,4 @@ body {
 @import './moreFeatures';
 @import './price';
 @import './newsletter';
+@import './footer';
