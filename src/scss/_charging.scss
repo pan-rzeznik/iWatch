@@ -9,11 +9,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2rem;
+        overflow-x: hidden;
 
         .charging__text-box {
             grid-column: 1/2;
             padding: 0 2rem;
-
+            transform: translateX(-35rem);
+            opacity: 0;
             header {
 
                 span{
@@ -52,6 +54,8 @@
         .charging__picture-box {
             grid-column: 2/3;
             align-self: center;
+            transform: translateX(35rem);
+            opacity: 0;
 
             img {
                 width: 100%;

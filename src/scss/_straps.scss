@@ -4,12 +4,13 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
     grid-column-gap: 2rem;
-
+    overflow-x: hidden;
 
         .strapts__text-box {
             grid-column: 2/3;
             padding: 0 2rem;
-
+            transform: translateX(35rem);
+            opacity: 0;
             header {
 
                 span {
@@ -51,6 +52,8 @@
             justify-self: center;
             width: 40rem;
             padding: 0 2rem; 
+            transform: translateX(-35rem);
+            opacity: 0;
 
             img {
                 width: 100%;

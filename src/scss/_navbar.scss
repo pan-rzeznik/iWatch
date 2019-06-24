@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     z-index: 900;
+    overflow-x: hidden;
 }
 
 .navbar-content {
@@ -12,11 +12,13 @@
     ul {
         list-style: none;
         display: flex;
-
+        
 
         li {
             padding: 1rem;
             margin: 0 2rem;
+            transform: translateX(60rem);
+            opacity: 0;
 
             &:last-child{
                 margin-right: 0;

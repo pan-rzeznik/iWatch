@@ -17,6 +17,7 @@
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-gap: 3rem 3rem;
         padding: 4rem 0;
+        overflow: hidden;
 
         .feature-v2 {
             padding: 2rem;
@@ -24,6 +25,7 @@
             flex-direction: column;
             align-items: center;
 
+           
             figcaption {
                 padding: 2rem 3rem 0 3rem;
                 font-size: 1.8rem;
@@ -45,6 +47,19 @@
                 height: 10rem;
                 width: 8rem;
             }
+        }
+
+        .f11 {
+            transform: translateX(-30rem);
+            opacity: 0;
+        }
+        .f22 {
+            transform: translateX(-60rem);
+            opacity: 0;
+        }
+        .f33 {
+            transform: translateX(-90rem);
+            opacity: 0;
         }
     }
 }

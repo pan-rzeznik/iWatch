@@ -15,7 +15,8 @@ body {
     max-width: 100%;
     @extend %grid-system;
     position: relative;
-
+    
+    
     header {
         max-width: 100%;
         grid-column: 2/12;
